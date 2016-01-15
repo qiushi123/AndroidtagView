@@ -1,0 +1,92 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f7f7f7" >
+
+    <RelativeLayout 
+        android:id="@+id/at_layout"
+	    android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        >
+        <RelativeLayout 
+	        android:id="@+id/at_image_layout"
+		    android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        >
+	        <ImageView 
+		        android:id="@+id/at_image"
+		        android:layout_width="match_parent"
+		        android:layout_height="match_parent"
+		        android:contentDescription="@string/app_name"
+		        />
+        </RelativeLayout>
+        <LinearLayout 
+            android:id="@+id/at_tag_layout"
+            android:layout_width="wrap_content"
+        	android:layout_height="match_parent"
+        	android:orientation="horizontal"
+        	android:layout_gravity="center"
+        	android:gravity="center"
+        	android:visibility="gone"
+            >
+            <ImageView 
+		        android:id="@+id/at_tag_image1"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:contentDescription="@string/app_name"
+		        android:src="@drawable/icon_tag_brand_active"
+		        android:layout_marginRight="20dp"
+		        />
+            <ImageView 
+		        android:id="@+id/at_tag_image2"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:contentDescription="@string/app_name"
+		        android:src="@drawable/icon_tag_geolocation_active"
+		        android:layout_marginRight="20dp"
+		        />
+            <ImageView 
+		        android:id="@+id/at_tag_image3"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:contentDescription="@string/app_name"
+		        android:src="@drawable/icon_tag_user_active"
+		        />
+        </LinearLayout>
+        
+    </RelativeLayout>
+    
+    
+    <LinearLayout 
+        android:id="@+id/at_layout_2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_below="@id/at_layout"
+        android:layout_marginTop="25dp"
+        android:gravity="center"
+        >
+		<TextView 
+        	android:layout_width="wrap_content"
+        	android:layout_height="wrap_content"
+        	android:text="@string/at_tag_info"
+		    />
+		<Button 
+		    android:id="@+id/at_show"
+		    android:layout_width="wrap_content"
+        	android:layout_height="wrap_content"
+        	android:text="show"
+        	android:layout_marginTop="10dp"
+		    />
+		<Button 
+		    android:id="@+id/at_finish"
+		    android:layout_width="wrap_content"
+        	android:layout_height="wrap_content"
+        	android:text="finish"
+        	android:layout_marginTop="10dp"
+		    />
+        
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">JImageEditDemo</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+
+    
+    <!-- 图片处理 -->
+    <string name="crop_next_text">下一步</string>
+    <string name="crop_rotate_text">旋转</string>
+    <string name="crop_cancel_text">取消</string>
+    <string name="runningFaceDetection">请稍后...</string>
+    <string name="at_tag_info">添加标签</string>
+    
+    <!-- AddTagActivity -->
+    <string name="at_want_delete">您要删除当前标签吗 ？</string>
+    <string name="at_ok">确定</string>
+    <string name="at_cancel">取消</string>
+    
+</resources>
