@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/wm_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"/>
+
+    <!--<LinearLayout-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:orientation="horizontal">-->
+
+    <!--<Button-->
+    <!--android:id="@+id/button_change_to_molten"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:text="铸融效果"/>-->
+
+    <!--<Button-->
+    <!--android:id="@+id/button_change_to_relief"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:text="浮雕效果"/>-->
+
+
+    <!--<Button-->
+    <!--android:id="@+id/button_change_to_invert"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:text="反色效果"/>-->
+
+    <!--<Button-->
+    <!--android:id="@+id/button_change_to_oid"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:text="油画效果"/>-->
+
+    <!--<Button-->
+    <!--android:id="@+id/button_change_to_block"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:text="版画效果"/>-->
+
+    <!--</LinearLayout>-->
+
+
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:scrollbars="none"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#ffffff"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <Button
+                    android:id="@+id/original_btn"
+                    android:layout_width="@dimen/filter_height"
+                    android:layout_height="@dimen/filter_height"
+                    >
+
+                </Button>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:text="无效果"
+                    android:textColor="@color/filter_button_text"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <Button
+                    android:id="@+id/button_change_to_light"
+                    android:layout_width="@dimen/filter_height"
+                    android:layout_height="@dimen/filter_height"
+                    android:layout_marginLeft="@dimen/filter_left"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:text="光照效果"
+                    android:textColor="@color/filter_button_text"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <Button
+                    android:id="@+id/button_change_to_haha"
+                    android:layout_width="@dimen/filter_height"
+                    android:layout_height="@dimen/filter_height"
+                    android:layout_marginLeft="@dimen/filter_left"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:text="哈哈镜"
+                    android:textColor="@color/filter_button_text"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <Button
+                    android:id="@+id/button_change_to_soft"
+                    android:layout_width="@dimen/filter_height"
+                    android:layout_height="@dimen/filter_height"
+                    android:layout_marginLeft="@dimen/filter_left"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:text="柔滑美白"
+                    android:textColor="@color/filter_button_text"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <Button
+                    android:id="@+id/button_change_to_eclosion"
+                    android:layout_width="@dimen/filter_height"
+                    android:layout_height="@dimen/filter_height"
+                    android:layout_marginLeft="@dimen/filter_left"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:text="羽化效果"
+                    android:textColor="@color/filter_button_text"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <Button
+                    android:id="@+id/button_change_to_ice"
+                    android:layout_width="@dimen/filter_height"
+                    android:layout_height="@dimen/filter_height"
+                    android:layout_marginLeft="@dimen/filter_left"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:text="冰冻效果"
+                    android:textColor="@color/filter_button_text"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <Button
+                    android:id="@+id/button_change_to_carton"
+                    android:layout_width="@dimen/filter_height"
+                    android:layout_height="@dimen/filter_height"
+                    android:layout_marginLeft="@dimen/filter_left"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:text="连环画效果"
+                    android:textColor="@color/filter_button_text"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <Button
+                    android:id="@+id/button_change_to_gray"
+                    android:layout_width="@dimen/filter_height"
+                    android:layout_height="@dimen/filter_height"
+                    android:layout_marginLeft="@dimen/filter_left"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:text="黑白效果"
+                    android:textColor="@color/filter_button_text"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <Button
+                    android:id="@+id/button_change_to_old"
+                    android:layout_width="@dimen/filter_height"
+                    android:layout_height="@dimen/filter_height"
+                    android:layout_marginLeft="@dimen/filter_left"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:text="怀旧效果"
+                    android:textColor="@color/filter_button_text"/>
+            </LinearLayout>
+
+        </LinearLayout>
+    </HorizontalScrollView>
+
+    <Button
+        android:id="@+id/wm_next_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/wm_layout_2"
+        android:layout_gravity="bottom"
+        android:text="@string/crop_next_text"
+        />
+
+</LinearLayout>
+
+

@@ -1,95 +1,103 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:background="#f7f7f7"
-    tools:context="com.example.imagescale.ImageScaleActivity$PlaceholderFragment" >
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#f7f7f7"
+    >
 
-    <RelativeLayout 
-	    android:id="@+id/wm_image_layout"
-		android:layout_width="wrap_content"
-	    android:layout_height="wrap_content"
-	    >
-	    <ImageView 
-	        android:id="@+id/wm_image"
-	        android:layout_width="wrap_content"
-	        android:layout_height="wrap_content"
-	        android:contentDescription="@string/app_name"
-	        />
-	</RelativeLayout>
-    
-    <LinearLayout 
+    <RelativeLayout
+        android:id="@+id/wm_image_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        >
+
+        <ImageView
+            android:id="@+id/wm_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/app_name"
+            />
+    </RelativeLayout>
+
+    <LinearLayout
         android:id="@+id/wm_layout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal"
         android:layout_below="@id/wm_image_layout"
         android:layout_marginTop="15dp"
+        android:orientation="horizontal"
         android:visibility="gone"
         >
-        <ImageView 
+
+        <ImageView
             android:id="@+id/wm_mark1"
-        	android:layout_width="100dp"
-        	android:layout_height="100dp"
-        	android:contentDescription="@string/app_name"
-        	android:src="@drawable/wm_1"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:contentDescription="@string/app_name"
+            android:src="@drawable/wm_1"
             />
-        <ImageView 
+
+        <ImageView
             android:id="@+id/wm_mark2"
-        	android:layout_width="100dp"
-        	android:layout_height="100dp"
-        	android:contentDescription="@string/app_name"
-        	android:src="@drawable/wm_2"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:contentDescription="@string/app_name"
+            android:src="@drawable/wm_2"
             />
-        <ImageView 
+
+        <ImageView
             android:id="@+id/wm_mark3"
-        	android:layout_width="100dp"
-        	android:layout_height="100dp"
-        	android:contentDescription="@string/app_name"
-        	android:src="@drawable/wm_3"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:contentDescription="@string/app_name"
+            android:src="@drawable/wm_3"
             />
-        
-        
+
+
     </LinearLayout>
-    
-    <LinearLayout 
+
+    <LinearLayout
         android:id="@+id/wm_layout_2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal"
         android:layout_below="@id/wm_layout"
         android:layout_marginTop="15dp"
+        android:orientation="horizontal"
         >
-        <ImageView 
+
+        <ImageView
             android:id="@+id/wm_mark4"
-        	android:layout_width="100dp"
-        	android:layout_height="100dp"
-        	android:contentDescription="@string/app_name"
-        	android:src="@drawable/wm_4"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:contentDescription="@string/app_name"
+            android:src="@drawable/wm_4"
             />
-        <ImageView 
+
+        <ImageView
             android:id="@+id/wm_mark5"
-        	android:layout_width="100dp"
-        	android:layout_height="100dp"
-        	android:contentDescription="@string/app_name"
-        	android:src="@drawable/wm_5"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:contentDescription="@string/app_name"
+            android:src="@drawable/wm_5"
             />
-        <ImageView 
+
+        <ImageView
             android:id="@+id/wm_mark6"
-        	android:layout_width="100dp"
-        	android:layout_height="100dp"
-        	android:contentDescription="@string/app_name"
-        	android:src="@drawable/wm_6"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:contentDescription="@string/app_name"
+            android:src="@drawable/wm_6"
             />
-        
-        
+
+
     </LinearLayout>
-    <Button 
+
+    <Button
         android:id="@+id/wm_next_btn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/crop_next_text"
         android:layout_below="@id/wm_layout_2"
+        android:text="@string/crop_next_text"
         />
 
 </RelativeLayout>

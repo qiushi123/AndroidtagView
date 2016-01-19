@@ -83,6 +83,7 @@ public class TakePicActivity extends Activity implements OnClickListener {
         }
     }
 
+    //显示出选择菜单
     private void showPostMenu() {
         new AlertDialog.Builder(this).setItems(new String[]{"拍照", "相册"}, new DialogInterface.OnClickListener() {
             public void onClick(DialogInterface paramDialogInterface, int paramInt) {
@@ -133,6 +134,7 @@ public class TakePicActivity extends Activity implements OnClickListener {
         }
     }
 
+    //选择照片后进行图片裁剪
     private void readLocalImage(Uri uri) {
         if (uri != null) {
             startPhotoCrop(uri, null, REQ_CODE_PHOTO_CROP); // 图片裁剪
@@ -154,7 +156,7 @@ public class TakePicActivity extends Activity implements OnClickListener {
 
         //		Uri duplicateUri = preCrop(uri,duplicatePath);
 
-        Intent intent = new Intent(this, CropActivity.class);
+        Intent intent = new Intent(this, CropActivity.class);//跳转到裁剪界面
         intent.putExtra(IMAGE_URI, uri);
         startActivityForResult(intent, reqCode);
 

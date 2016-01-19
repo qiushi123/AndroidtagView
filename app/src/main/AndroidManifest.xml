@@ -29,30 +29,43 @@
             </intent-filter>
         </activity>
 
+        <!--裁剪界面-->
         <activity
             android:name="com.pmmq.pmmqproject.ui.picture.CropActivity"
             android:label="@string/app_name"
             android:screenOrientation="portrait"
             android:theme="@android:style/Theme.NoTitleBar">
         </activity>
+        <!--贴图界面-->
         <activity
             android:name="com.pmmq.pmmqproject.ui.picture.WaterMarkActivity"
             android:label="@string/app_name"
             android:screenOrientation="portrait"
             android:theme="@android:style/Theme.NoTitleBar">
         </activity>
+
+        <!--qcl滤镜界面-->
+        <activity
+            android:name="com.pmmq.pmmqproject.ui.picture.WaterMarkActivity_ImageFilter"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar">
+        </activity>
+        <!--添加标签界面-->
         <activity
             android:name="com.pmmq.pmmqproject.ui.tag.AddTagActivity"
             android:label="@string/app_name"
             android:screenOrientation="portrait"
             android:theme="@android:style/Theme.NoTitleBar">
         </activity>
+        <!--预览界面-->
         <activity
             android:name="com.pmmq.pmmqproject.ui.tag.ShowTagActivity"
             android:label="@string/app_name"
             android:screenOrientation="portrait"
             android:theme="@android:style/Theme.NoTitleBar">
         </activity>
+        <!--展示界面-->
         <activity
             android:name="com.pmmq.pmmqproject.ui.tag.PreViewActivity"
             android:label="@string/app_name"

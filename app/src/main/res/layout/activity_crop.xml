@@ -15,49 +15,57 @@
 -->
 
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent">
+             android:layout_width="match_parent"
+             android:layout_height="match_parent">
 
     <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <!--裁剪框-->
+        <view
+            android:id="@+id/image"
+            class="com.pmmq.pmmqproject.ui.picture.CropImageView"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:orientation="horizontal">
+            android:layout_x="0dip"
+            android:layout_y="0dip"
+            android:background="#55000000"
+            />
 
-        <view class="com.pmmq.pmmqproject.ui.picture.CropImageView" android:id="@+id/image"
-                android:background="#55000000"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_x="0dip"
-                android:layout_y="0dip"
-        />
-        <RelativeLayout android:layout_width="wrap_content"
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:orientation="horizontal"
+            android:paddingLeft="10dip"
+            android:paddingRight="10dip">
+
+            <Button
+                android:id="@+id/cr_cancel"
+                android:layout_width="100dip"
                 android:layout_height="wrap_content"
-                android:orientation="horizontal"
-                android:paddingLeft="10dip"
-                android:paddingRight="10dip"
-                android:layout_alignParentBottom="true"
-                android:layout_centerHorizontal="true">
+                android:layout_alignParentLeft="true"
+                android:text="@string/crop_cancel_text"
+                />
+
             <Button
-                    android:id="@+id/cr_cancel"
-                    android:layout_width="100dip"
-                    android:layout_height="wrap_content"
-                    android:layout_alignParentLeft="true"
-                    android:text="@string/crop_cancel_text"
-            />
-             <Button
-                    android:id="@+id/cr_rotate"
-                    android:layout_width="100dip"
-                    android:layout_height="wrap_content"
-                    android:layout_centerInParent="true"
-                    android:text="@string/crop_rotate_text"
-            />
+                android:id="@+id/cr_rotate"
+                android:layout_width="100dip"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="@string/crop_rotate_text"
+                />
+
             <Button
-                    android:id="@+id/cr_next"
-                    android:layout_width="100dip"
-                    android:layout_height="wrap_content"
-                    android:layout_alignParentRight="true"
-                    android:text="@string/crop_next_text"
-            />
+                android:id="@+id/cr_next"
+                android:layout_width="100dip"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:text="@string/crop_next_text"
+                />
         </RelativeLayout>
     </RelativeLayout>
 
