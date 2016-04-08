@@ -1,6 +1,9 @@
 # AndroidtagView
 Android 图片裁剪、添加水印、标签。仿nice添加标签
 
+#此贴在安卓bus上有引用，引用地址如下。
+http://www.apkbus.com/forum.php?mod=viewthread&tid=254407&extra=page%3D2%26filter%3Dsortid%26orderby%3Ddateline%26sortid%3D12
+
 
 #先看效果图
 ##1，拍照或者选择照片
